@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewordport" content="wordidth=device-wordidth, initial-scale=1.0">
+    <title>Document</title>
+    <link href="page.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>&copy; A V I G A I L &nbsp; D A V I D</header>
+    <script src="page.js"></script>
+    <button onclick="progrem()" id="starte">start</button>
+    <table id="tableWord">
+        <tbody id="letters"></tbody>
+    </table>
+    
+    <img src="bbb__2_-removebg-preview.png" id="b">
+
+    <section id="yes" class="end">Good!!</section>
+    <section id="no" class="end">Howw..</section>
+
+
+    <table id="imgHidd">
+        <tbody>
+            <tr>
+                <td id="25" class="allimg"></td>
+                <td id="24" class="allimg"></td>
+                <td id="23" class="allimg"></td>
+            </tr>
+            <tr>
+                <td id="26" class="allimg"></td>
+                <td id="27" class="allimg"></td>
+                <td id="22" class="allimg"></td>
+            </tr>
+            <tr>
+                <td id="28" class="allimg"></td>
+                <td id="29" class="allimg"></td>
+                <td id="21" class="allimg"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table id="keyBorde">
+        <tbody>
+            <tr>
+                <td><button onclick="searchLetter(word , id)" id="A" class="blet">A</button></td>
+                <td><button onclick="searchLetter(word , id)" id="B" class="blet">B</button></td>
+                <td><button onclick="searchLetter(word , id)" id="C" class="blet">C</button></td>
+                <td><button onclick="searchLetter(word , id)" id="D" class="blet">D</button></td>
+                <td><button onclick="searchLetter(word , id)" id="E" class="blet">E</button></td>
+                <td><button onclick="searchLetter(word , id)" id="F" class="blet">F</button></td>
+                <td><button onclick="searchLetter(word , id)" id="G" class="blet">G</button></td>
+                <td><button onclick="searchLetter(word , id)" id="H" class="blet">H</button></td>
+                <td><button onclick="searchLetter(word , id)" id="I" class="blet">I</button></td>
+                <td><button onclick="searchLetter(word , id)" id="J" class="blet">J</button></td>
+            </tr>
+            <tr>
+                <td><button class="blet"></button></td>
+                <td><button onclick="searchLetter(word , id)" id="K" class="blet">K</button></td>
+                <td><button onclick="searchLetter(word , id)" id="L" class="blet">L</button></td>
+                <td><button onclick="searchLetter(word , id)" id="M" class="blet">M</button></td>
+                <td><button onclick="searchLetter(word , id)" id="N" class="blet">N</button></td>
+                <td><button onclick="searchLetter(word , id)" id="O" class="blet">O</button></td>
+                <td><button onclick="searchLetter(word , id)" id="P" class="blet">P</button></td>
+                <td><button onclick="searchLetter(word , id)" id="Q" class="blet">Q</button></td>
+                <td><button onclick="searchLetter(word , id)" id="R" class="blet">R</button></td>
+                <td><button class="blet" ><a href="start.html" id="ret">NEW PLAY</a></button></td>
+            </tr>
+            <tr>
+                <td><button class="blet"></button></td>
+                <td><button onclick="searchLetter(word , id)" id="S" class="blet">S</button></td>
+                <td><button onclick="searchLetter(word , id)" id="T" class="blet">T</button></td>
+                <td><button onclick="searchLetter(word , id)" id="U" class="blet">U</button></td>
+                <td><button onclick="searchLetter(word , id)" id="V" class="blet">V</button></td>
+                <td><button onclick="searchLetter(word , id)" id="W" class="blet">W</button></td>
+                <td><button onclick="searchLetter(word , id)" id="X" class="blet">X</button></td>
+                <td><button onclick="searchLetter(word , id)" id="Y" class="blet">Y</button></td>
+                <td><button onclick="searchLetter(word , id)" id="Z" class="blet">Z</button></td>
+                <td><button class="blet"></button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script>
+        let letters=document.getElementById('letters')
+        function progrem(){
+        let w = randomWord();
+        hiddenWord(w, letters);
+        document.getElementById('starte').style.display="none"
+    }
+    </script>
+
+<audio autoplay src="8-bit-music.mp3"></audio>
+<audio src="applause.mp3" id="good" ></audio>
+<audio src="כישלון סופי.mp3" id="bed"></audio>
+<audio src="כישלון.mp3" id="p"></audio>
+<audio src="הצלחה.mp3" id="h"></audio>
+
+</body>
+</html>
